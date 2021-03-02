@@ -21,6 +21,5 @@ while is_machine_on:
         if item is not None:
             if coffee_maker.is_resource_sufficient(item):
                 # money_received = money_machine.process_coins()
-                cost = item.cost
-                if money_machine.make_payment(cost):
+                if money_machine.make_payment(item.cost):
                     coffee_maker.make_coffee(item)
